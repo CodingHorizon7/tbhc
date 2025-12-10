@@ -2000,3 +2000,115 @@ footer {
 .btn-book-tickets:hover {
     background-color: #6b4526; /* slightly lighter brown on hover */
 }
+
+/* ============================ */
+/* Looking For Something To Do Section */
+.things-section {
+    background-color: #8c5a3c !important; /* brown background */
+    padding: 60px 20px;
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+
+/* Section heading */
+.things-section h2 {
+    color: #ffffff !important; /* white text */
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+}
+
+/* Grid container */
+.things-section .things-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; /* adds space around cards */
+    background: transparent !important;
+}
+
+/* Individual item cards */
+.things-section .thing-item {
+    background-color: #ffffff !important; /* white cards */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000000; /* black text inside cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.things-section .thing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Images inside cards */
+.things-section .thing-item img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Headings inside cards */
+.things-section .thing-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Paragraph text inside cards */
+.things-section .thing-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* Learn More buttons */
+.things-section .learn-btn {
+    display: inline-block;
+    background-color: #7a5a3a; /* brown button */
+    color: #ffffff; /* white text */
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Learn More buttons */
+.things-section .learn-btn:hover {
+    background-color: #5c432b; /* darker brown on hover */
+    color: #ffffff;
+}
+
+/* Get Tickets buttons */
+.things-section .ticket-btn {
+    display: inline-block;
+    background-color: #8c5a3c; /* brown button */
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for Get Tickets buttons */
+.things-section .ticket-btn:hover {
+    background-color: #6f432b;
+    color: #ffffff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .things-section .things-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
