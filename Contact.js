@@ -26,7 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Phone number must be exactly 10 digits and contain numbers only (no letters or symbols).");
         return;
     }
-
+       // Name validation: letters + spaces, 3–40 characters
+     if (!/^[A-Za-z\s]{3,40}$/.test(name)) {
+         alert("Please enter a valid name (letters and spaces only, 3–40 characters).");
+         return;
+        }
         // All validations passed
         formMessage.textContent = "Message sent successfully! Thank you for contacting us.";
         formMessage.style.color = "green";
@@ -35,3 +39,4 @@ document.addEventListener("DOMContentLoaded", () => {
         contactForm.reset();
     });
 });
+
