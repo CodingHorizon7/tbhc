@@ -2112,3 +2112,29 @@ footer {
         gap: 20px;
     }
 }
+
+/* ============================ */
+/* Buttons inside things-section */
+.things-section a.learn-btn,
+.things-section a.ticket-btn {
+    display: inline-block;
+    background-color: #7a5a3a; /* brown button */
+    color: #ffffff !important; /* force white text */
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for Learn More */
+.things-section a.learn-btn:hover {
+    background-color: #5c432b; /* darker brown */
+    color: #ffffff !important;
+}
+
+/* Hover effect for Get Tickets */
+.things-section a.ticket-btn:hover {
+    background-color: #6f432b; /* darker brown */
+    color: #ffffff !important;
+}
