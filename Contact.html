@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tampa Bay History Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+            <img src="Images/images/logo.jpg" alt="TBHC Logo" class="logo-img">
+            Tampa Bay History Center
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+            <li class="navbar__item"><a href="Visitor.html" class="navbar__links">Visitor</a></li>
+            <li class="navbar__item"><a href="Exhibits.html" class="navbar__links">Exhibits</a></li>
+            <li class="navbar__item"><a href="Artifacts.html" class="navbar__links">Featured Artifacts</a></li>
+            <li class="navbar__item"><a href="About.html" class="navbar__links">About Us</a></li>
+            <li class="navbar__btn"><a href="Contact.html" class="navbar__links">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="Images/images/about-map.webp" alt="Contact Hero Image">
+    <div class="hero-text">
+        <h1>Contact Us</h1>
+        <p>We love to hear from you! Send us a message or reach out directly.</p>
+    </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<div class="container contact-container">
+    <div class="contact-columns">
+        <!-- Left Column: Form -->
+        <div class="contact-form-column">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" required></textarea>
+
+                <button type="submit" class="visit-btn">Send Message</button>
+                <p id="form-message" class="form-message"></p>
+            </form>
+        </div>
+
+        <!-- Right Column: Contact Info -->
+        <div class="contact-info-column">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 801 Old Water Street, Tampa, FL 33602</p>
+            <p><strong>Phone:</strong> (813) 228-0097</p>
+            <p><strong>Email:</strong> info@tampabayhistorycenter.org</p>
+            <p><strong>Hours:</strong> Mon-Sun: 10:00 AM – 5:00 PM</p>
+            <img src="Images/images/history-center.webp" alt="Museum Map" class="contact-map">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy;  All information and photos came from the orginal Tampa Bay History Center Website.
+               This wbesite is for school project purposes only.</p>
+</footer>
+
+<script src="Contact.js"></script>
+</body>
+</html>

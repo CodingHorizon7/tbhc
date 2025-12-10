@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Event - Tampa Bay History Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <img src="Images/images/logo.jpg" alt="TBHC Logo" class="logo-img">
+                Tampa Bay History Center
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+                <li class="navbar__item"><a href="Visitor.html" class="navbar__links">Visitor</a></li>
+                <li class="navbar__item"><a href="Exhibits.html" class="navbar__links">Exhibits</a></li>
+                <li class="navbar__item"><a href="Artifacts.html" class="navbar__links">Featured Artifacts</a></li>
+                <li class="navbar__item"><a href="About.html" class="navbar__links">About Us</a></li>
+                <li class="navbar__btn"><a href="Contact.html" class="navbar__links">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BOOKING FORM -->
+    <div class="booking-container">
+        <h2>Book an Event</h2>
+
+        <label for="event-select">Select Event:</label>
+        <select id="event-select">
+            <option value="">--Choose an Event--</option>
+            <option value="central-walk">Walking Tour Central Avenue</option>
+            <option value="yuber-walk">Walking Tour Yuber</option>
+            <option value="cruise">Cruise Adventure</option>
+            <option value="history-joke">History Joke Tour</option>
+        </select>
+
+        <div class="event-summary" id="event-summary">
+            <h3>Event Summary</h3>
+            <p>Select an event to see details.</p>
+        </div>
+
+        <form id="booking-form">
+
+            <label for="name">Full Name  </label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+    
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+
+            <label for="date">Event Date</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Event Time</label>
+            <input type="time" id="time" required>
+
+            <label for="adults">Number of Adults</label>
+            <input type="number" id="adults" min="0" value="0" required>
+
+            <label for="kids">Number of Kids</label>
+            <input type="number" id="kids" min="0" value="0" required>
+
+            <p><strong>Total Cost $<span id="total-cost">0</span></strong></p>
+
+            <button type="submit" class="book-btn">Book Event</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; All information and photos came from the original Tampa Bay History Center Website.
+           This website is for school project purposes only.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="Book-Event.js"></script>
+</body>
+</html>

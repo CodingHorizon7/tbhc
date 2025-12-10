@@ -1,0 +1,140 @@
+/* ----------------------------- */
+/* Columbia Café Custom Styling  */
+/* ----------------------------- */
+
+/* Remove white space at top */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Cafe Section */
+.cafe-section {
+    padding: 60px 10%;
+    background-color: #faf7f2;
+}
+
+.cafe-container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #7a5a3a;
+}
+
+/* Flex layout for text + image */
+.cafe-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.cafe-text {
+    flex: 1 1 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a3f35;
+}
+
+.cafe-img-box {
+    flex: 1 1 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.cafe-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Menu styling */
+.cafe-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cafe-menu li {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #7a5a3a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .hero-text h1 { font-size: 2.4rem; }
+    .hero-text p { font-size: 1.1rem; }
+
+    .cafe-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cafe-img-box {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.hero {
+    position: relative;
+    height: 100vh; /* full viewport height */
+    background-image: url('Images/images/Columbia-Cafe.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    padding: 0 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}

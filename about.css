@@ -1,0 +1,108 @@
+/* ===========================
+   ABOUT PAGE STYLES
+=========================== */
+
+/* Two-column layout (default for Mission section) */
+.two-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.text-column {
+    flex: 1 1 500px;
+}
+
+.image-column {
+    flex: 1 1 400px;
+}
+
+.image-column img,
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Reverse layout for Our Story (image left, text right) */
+.two-column.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Brown background section */
+.brown-bg {
+    background-color: #3E2C1C;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Ensure text stays white in brown-bg */
+.brown-bg .text-column p,
+.brown-bg .text-column h2,
+.brown-bg .text-column h3,
+.brown-bg .text-column li {
+    color: #fff;
+}
+
+/* Headings spacing */
+.text-column h2,
+.text-column h3 {
+    margin-bottom: 15px;
+}
+
+/* Body text spacing */
+.text-column p,
+.text-column li {
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .two-column,
+    .two-column.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .text-column,
+    .image-column {
+        flex: 1 1 100%;
+    }
+
+    .image-column img,
+    .main-img {
+        max-width: 85%;
+        margin: 20px auto;
+    }
+}
+
+/* Center section headings */
+.container h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* Our Story brown background styling */
+.brown-bg {
+    background-color: #3E2C1C;
+    color: #fff;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.brown-bg .text-column p,
+.brown-bg .text-column h2,
+.brown-bg .text-column h3,
+.brown-bg .text-column li {
+    color: #fff;
+}

@@ -1,0 +1,99 @@
+/* ----------------------------- */
+/* Touchton Map Library Styling  */
+/* ----------------------------- */
+
+/* Remove white space at top */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Full-page Hero Section */
+.hero-full {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 3.2rem;
+    text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Touchton Section */
+.touchton-section {
+    padding: 60px 10%;
+    background-color: #faf7f2;
+}
+
+.touchton-container h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    color: #7a5a3a;
+}
+
+/* Flex layout for text + image */
+.touchton-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.touchton-text {
+    flex: 1 1 500px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a3f35;
+}
+
+.touchton-img-box {
+    flex: 1 1 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.touchton-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .hero-text h1 { font-size: 2.4rem; }
+    .hero-text p { font-size: 1.1rem; }
+
+    .touchton-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .touchton-img-box {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

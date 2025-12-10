@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - Tampa Bay History Center</title>
+    <link rel="stylesheet" href="styles.css"> <!-- same as visitor page -->
+    <link rel="stylesheet" href="booking.css"> <!-- booking-specific styles -->
+</head>
+<body>
+
+<!-- NAVBAR (same as visitor page) -->
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">
+            <img src="Images/images/logo.jpg" alt="TBHC Logo" class="logo-img">
+            Tampa Bay History Center
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="index.html" class="navbar__links">Home</a></li>
+            <li class="navbar__item"><a href="Visitor.html" class="navbar__links">Visitor</a></li>
+            <li class="navbar__item"><a href="Exhibits.html" class="navbar__links">Exhibits</a></li>
+            <li class="navbar__item"><a href="Artifacts.html" class="navbar__links">Featured Artifacts</a></li>
+            <li class="navbar__item"><a href="About.html" class="navbar__links">About Us</a></li>
+            <li class="navbar__btn"><a href="Contact.html" class="navbar__links">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="Images/images/artifact.webp" alt="Museum">
+    <div class="hero-text">
+        <h1>Book Your Tickets</h1>
+        <p>Choose your ticket type and quantity, then confirm your visit to the Tampa Bay History Center.</p>
+    </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="booking-section">
+    <div class="booking-container">
+        <h2>Ticket Booking</h2>
+        <form id="bookingForm">
+            <label for="adult">Adult ($20)</label>
+            <input type="number" id="adult" min="0" value="0">
+
+            <label for="child">Child (Ages 5-12) ($10)</label>
+            <input type="number" id="child" min="0" value="0">
+
+            <label for="senior">Senior (65+) ($15)</label>
+            <input type="number" id="senior" min="0" value="0">
+
+            <label for="youth">Youth (13-17) ($8)</label>
+            <input type="number" id="youth" min="0" value="0">
+
+            <label for="college">College Student ($12)</label>
+            <input type="number" id="college" min="0" value="0">
+
+            <!-- Contact Info -->
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Full Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@email.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="123-345-5678">
+
+            <div class="total-section">
+                Total: $<span id="totalAmount">0</span>
+            </div>
+
+            <button type="submit">Purchase</button>
+
+        </form>
+
+        <div class="message" id="confirmation"></div>
+    </div>
+</section>
+
+
+<script src="booking.js"></script>
+<script src="script.js"></script> <!-- if your mobile menu toggle script is needed -->
+
+<footer>
+    <p>&copy;  All information and photos came from the orginal Tampa Bay History Center Website.
+               This wbesite is for school project purposes only.</p>
+</footer>
+
+</body>
+</html>
