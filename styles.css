@@ -2138,3 +2138,11 @@ footer {
     background-color: #6f432b; /* darker brown */
     color: #ffffff !important;
 }
+
+.centered-cards {
+    display: flex;
+    justify-content: center; /* centers the cards horizontally */
+    gap: 40px; /* space between the two cards */
+    flex-wrap: wrap; /* keeps it responsive on smaller screens */
+}
+
